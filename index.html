@@ -9,10 +9,10 @@
 				var ua = navigator.userAgent.toLowerCase();
             if(ua.match(/MicroMessenger/i)=="micromessenger") {
                  //return "weixin";
-                 alert("微信用户请点击右上角 “ … ” 点击 在浏览器打开 。")
+		 mdui.alert('微信用户请点击右上角 “ … ” 点击 在浏览器打开 。', '提示');
             } else if (ua.match(/QQ/i) == "qq") {
                  //return "QQ";
-                  alert("QQ用户请点击右上角 “ + ” 找到 浏览器 按钮打开 。")
+		 mdui.alert('QQ用户请点击右上角 “ + ” 找到 浏览器 按钮打开 。', '提示');
             }else {
 		 document.location = 'https://kurisu.run:8082'; 
             }
