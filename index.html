@@ -1,11 +1,10 @@
-<html><head><title>Kurisu Blog 前置页面</title></head>
-<body>
-  
-  <h1>正在打开 Kurisu Blog</h1>
-  
-<script language='javascript'>
+<html>
+	<head>
+		<title>Kurisu Blog 前置页面</title>
+		
+		<script language='javascript'>
     
-    function gowebside() {
+    function myFunction() {
 				var ua = navigator.userAgent.toLowerCase();
             if(ua.match(/MicroMessenger/i)=="micromessenger") {
                  //return "weixin";
@@ -17,9 +16,13 @@
                  return false;    
                  document.location = 'https://kurisu.run:8082';
             }
-			}
-    gowebside()
-    
-    </script>
-</body>
+			} 
+    	</script>
+		
+	</head>
+	<body onload="myFunction()">
+  
+		<h1>正在打开 Kurisu Blog</h1>
+  
+	</body>
 </html>
