@@ -5,9 +5,8 @@
   
 <script language='javascript'>
     
-    
-    
-    var ua = navigator.userAgent.toLowerCase();
+    function gowebside() {
+				var ua = navigator.userAgent.toLowerCase();
             if(ua.match(/MicroMessenger/i)=="micromessenger") {
                  //return "weixin";
                  alert("微信用户请点击右上角 “ … ” 点击 在浏览器打开 。")
@@ -18,7 +17,8 @@
                  return false;    
                  document.location = 'https://kurisu.run:8082';
             }
-    
+			}
+    gowebside()
     
     </script>
 </body>
